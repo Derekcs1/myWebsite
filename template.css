@@ -73,13 +73,15 @@ marquee {
 }
 
 .bg-1{
-  background-image: #111f5a;
+  /*this is the container for the images and college list*/
+  background-color: #111f5a;
   color: #111f5a;
 }
 
 .bg-2{
-  background-image: #111f5a;
-  color: #111f5a;
+  /*this is the container for the about me section and images*/
+  /*background-color: #111f5a;
+  color: #111f5a;*/
 }
 
 #IMG1, #IMG2, #IMG3{
@@ -95,6 +97,6 @@ marquee {
     background-color: #015965;
     color: #ffffff;
     padding: 30px;
-    margin-top: 40px;
+    margin-top: 30px;
 
 }
