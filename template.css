@@ -14,21 +14,14 @@
 marquee {
   font-size: 40px;
   font: "Montserrat", sans-serif;
-  color: *#015965
-  /*#015965 this hex is a slightly transparent blue color*/
+  color: #015965; /*slightly transparent blue color*/
+
 }
 
 .navbar-nav li a:hover {
   color: #1abc9c !important;
 }
 
-
-/* Add a gray background color and some padding to the footer */
-
-footer {
-  background-color: #f2f2f2;
-  padding: 25px;
-}
 
 .carousel-inner img {
   width: 100%;
@@ -44,4 +37,64 @@ footer {
   .carousel-caption {
     display: none;
   }
+}
+
+#dropDownButton{
+  padding: 10px 25px;
+  background-color: #015965;
+  border-style: none;
+  font: 15px "Montserrat", sans-serif;
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 9px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+#dropDownButton:hover {
+    background-color: #f9defd; /* Green */
+    color: white;
+}
+
+#collegeDiv{
+  margin-right: 0px;
+  padding-right: 0px;
+}
+
+#wellDiv{
+  margin-right: 0px;
+  padding-right: 0px;
+}
+
+#collegeHead{
+  font: "Montserrat", sans-serif;
+  color: #015965;
+}
+
+.bg-1{
+  background-image: #111f5a;
+  color: #111f5a;
+}
+
+.bg-2{
+  background-image: #111f5a;
+  color: #111f5a;
+}
+
+#IMG1, #IMG2, #IMG3{
+
+
+  border-radius: 0px;
+  border-width: thick;
+  border-style: groove;
+  border-color: #f9defd;
+}
+
+.bg-4 {
+    background-color: #015965;
+    color: #ffffff;
+    padding: 30px;
+    margin-top: 40px;
+
 }

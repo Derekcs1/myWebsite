@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
   <title>Welcome to Michael's page</title>
   <!-- link to style sheet -->
-  <link href="template.css" rel="stylesheet" type="text/css">
+  <link href="template.css" rel="stylesheet" type="text/css"></link>
 
   <!-- link to the google font that we want to use -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -23,7 +23,7 @@
 
 </head>
 
-<body>
+<body id="index">
 
   <marquee behavior="scroll" direction="up" scrollamount="1">Michael Moschitto's Page</marquee>
   <!-- <h1>Hello, World</h1> -->
@@ -86,36 +86,62 @@
       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
-</div>
+  </div>
 
-<div class="container text-center">
-  <h3>What We Do</h3><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-      <p>Current Project</p>
+  <!-- This is the images and college list in the middle container -->
+  <div class="container-fluid bg-1 text-center">
+    <!-- <h3>What We Do</h3><br> -->
+    <button id="dropDownButton" type="button" class="btn btn-info" data-toggle="collapse" data-target="#explanation">About this website</button>
+    <div id="explanation" class="collapse">
+      I created this website to showcase who I am as a student and what I have accomplished throughtout my academic career. It's goal is to use my computer science skills to show off who I am as a student, athlete, and person.
     </div>
-    <div class="col-sm-4">
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-      <p>Project 2</p>
-    </div>
-    <div class="col-sm-4">
-      <div class="well">
-       <p>Some text..</p>
+    <div class="row">
+      <div class="col-sm-4">
+        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+        <p>Current Project</p>
       </div>
-      <div class="well">
-       <p>Some text..</p>
+      <div class="col-sm-4">
+        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+        <p>Project 2</p>
+      </div>
+      <div class="col-sm-4">
+        <div class="well">
+          <h3 id="collegeHead">Colleges I'm interested</h3>
+          <p>
+            Stanford, Berkley, Ucla, Vanderbilt, UW, UPenn, Michigan
+          </p>
+        </div>
       </div>
     </div>
   </div>
-</div><br>
+
+
+  <!-- about me pictures and the captions that go along with them -->
+  <div class="container-fluid bg-2 text-center">
+    <h3>About me!</h3>
+    <div class="row">
+      <div class="col-sm-4">
+        <p>One of my favorite things to do is to mountain bike with my friends</p>
+        <img id="IMG1" src="ScottnMe.jpg" alt="Scott and me" class=" img-responsive " style="width:100% ">
+        <p>
+      </div>
+      <div class="col-sm-4">
+        <p>One of my favorite things to do is to mountain bike with my friends</p>
+        <img id="IMG2" src="ScottnMe.jpg" alt="Scott and me" class=" img-responsive " style="width:100% ">
+      </div>
+      <div class="col-sm-4 ">
+        <p>One of my favorite things to do is to mountain bike with my friends</p>
+        <img id="IMG3" src="ScottnMe.jpg " alt="Scott and me " class=" img-responsive " style="width:100% ">
+      </div>
+    </div>
+  </div>
 
 
 
-  <h2>This is my second header</h2>
-  <p>
-    Welcome to Michaels web page.
-  </p>
+  <footer class="container-fluid bg-4 text-center">
+    <p>Website by Michael Moschitto <a href="https://github.com/michaelmoschitto/myWebsite"></p>
+  </footer>
+
 </body>
 
 </html>
