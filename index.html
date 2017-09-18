@@ -25,7 +25,7 @@
 
 <body id="index">
 
-  <marquee behavior="scroll" direction="up" scrollamount="1">Michael Moschitto's Page</marquee>
+  <marquee behavior="scroll" direction="up" scrollamount="3" align="center" scrolldelay="10">Michael Moschitto's Page</marquee>
   <!-- <h1>Hello, World</h1> -->
 
   <!-- nav bar to nav to the other pages... done in bootstrap so it looks pretty -->
@@ -87,14 +87,18 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-
+  
   <!-- This is the images and college list in the middle container -->
   <div class="container-fluid bg-1 text-center">
-    <!-- <h3>What We Do</h3><br> -->
+
+    <!-- drop down button -->
+    <center>
     <button id="dropDownButton" type="button" class="btn btn-info" data-toggle="collapse" data-target="#explanation">About this website</button>
     <div id="explanation" class="collapse">
       I created this website to showcase who I am as a student and what I have accomplished throughtout my academic career. It's goal is to use my computer science skills to show off who I am as a student, athlete, and person.
     </div>
+  </center>
+
     <div class="row">
       <div class="col-sm-4">
         <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
@@ -104,11 +108,11 @@
         <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
         <p>Project 2</p>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-4" id="collegeDiv">
         <div class="well">
           <h3 id="collegeHead">Colleges I'm interested</h3>
           <p>
-            Stanford, Berkley, Ucla, Vanderbilt, UW, UPenn, Michigan
+            Stanford, Berkley, Ucla, Vanderbilt, UW, UPenn, Michigan, Northwestern, Georgia Tech, UVA,
           </p>
         </div>
       </div>
@@ -139,7 +143,8 @@
 
 
   <footer class="container-fluid bg-4 text-center">
-    <p>Website by Michael Moschitto <a href="https://github.com/michaelmoschitto/myWebsite"></p>
+    <p>Website by Michael Moschitto
+      <a href="https://github.com/michaelmoschitto/myWebsite"></p>
   </footer>
 
 </body>

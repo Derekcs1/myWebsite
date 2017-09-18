@@ -12,14 +12,14 @@
 }
 
 marquee {
-  font-size: 40px;
+  font-size: 80px;
   font: "Montserrat", sans-serif;
   color: #015965; /*slightly transparent blue color*/
 
 }
 
 .navbar-nav li a:hover {
-  color: #1abc9c !important;
+  color: #111f5a; !important;
 }
 
 
@@ -41,7 +41,7 @@ marquee {
 
 #dropDownButton{
   padding: 10px 25px;
-  background-color: #015965;
+  background-color: #111f5a;
   border-style: none;
   font: 15px "Montserrat", sans-serif;
   font-size: 15px;
@@ -58,8 +58,7 @@ marquee {
 }
 
 #collegeDiv{
-  margin-right: 0px;
-  padding-right: 0px;
+  color: #111f5a;
 }
 
 #wellDiv{
@@ -74,8 +73,9 @@ marquee {
 
 .bg-1{
   /*this is the container for the images and college list*/
-  background-color: #111f5a;
-  color: #111f5a;
+  background-color: #eae3ea;  /*#015965;*/
+  color:  white;
+ margin: 50px;
 }
 
 .bg-2{
@@ -93,10 +93,19 @@ marquee {
   border-color: #f9defd;
 }
 
+/*styles the footer*/
 .bg-4 {
     background-color: #015965;
     color: #ffffff;
     padding: 30px;
     margin-top: 30px;
 
+}
+
+
+
+#buttonDiv{
+  align-items: center;
+  align-content: center;
+  align-self: center;
 }

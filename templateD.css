@@ -5,35 +5,45 @@
   }
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
-  .bg-1 { 
+  .bg-1 {
       background-color: #417fe2; /* blue */
       color: #ffffff;
   }
-  .bg-2 { 
+  .bg-2 {
       background-color: #6f747c; /* grey */
       color: #ffffff;
   }
-  .bg-3 { 
+  .bg-3 {
       background-color: #ffffff; /* white */
       color: #555555;
   }
-  .bg-4 { 
+  .bg-4 {
       background-color: #6f747c; /* grey */
       color: #fff;
   }
   .container-fluid {
-      padding-top: 70px;
-      padding-bottom: 70px;
+      /*padding-top: 70px;
+      padding-bottom: 70px;*/
   }
   .navbar {
-      padding-top: 15px;
-      padding-bottom: 15px;
-      border: 0;
-      border-radius: 0;
-      margin-bottom: 0;
-      font-size: 12px;
-      letter-spacing: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    font: 15px "Montserrat", sans-serif;
   }
+
   .navbar-nav  li a:hover {
       color: #1abc9c !important;
+  }
+
+  marquee {
+    font-size: 40px;
+    font: "Montserrat", sans-serif;
+    color: #015965; /*slightly transparent blue color*/
+    scroll-behavior: smooth;
+
   }
