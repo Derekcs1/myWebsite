@@ -1,0 +1,199 @@
+/*our css style sheet*/
+
+
+/*transparent blue #6b9099*/
+
+
+/*grey color #767b78*/
+
+
+/*darker blue #1d686e*/
+
+
+/*navy or black #22272d*/
+
+
+/*green color #4b4833*/
+
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+  font: 15px "Montserrat", sans-serif;
+  color: #4b4833;
+}
+
+marquee {
+  font-size: 80px;
+  font: "Montserrat", sans-serif;
+  color: #4b4833;
+}
+
+.navbar-nav li a:hover {
+  color: #1d686e;
+  !important;
+}
+
+.carousel-inner img {
+  width: 100%;
+  /* Set width to 100% */
+  margin: auto;
+  min-height: 200px;
+}
+
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none;
+  }
+}
+
+#dropDownButton {
+  padding: 10px 25px;
+  background-color: #6b9099;
+  border-style: none;
+  font: 15px "Montserrat", sans-serif;
+  font-size: 15px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  border-radius: 9px;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  box-shadow: 5px 5px;
+}
+
+#dropDownButton:hover {
+  background-color: #4b4833;
+  color: white;
+}
+
+#collegeDiv {
+  color: #767b78;
+  /*box-shadow: 3px 3px;*/
+}
+
+#wellDiv {
+  margin-right: 0px;
+  padding-right: 0px;
+}
+
+#collegeHead {
+  font: "Montserrat", sans-serif;
+  color: #6b9099;
+}
+
+.bg-1 {
+  /*this is the container for the images and college list*/
+  background-color: white; /*#015965;
+  */ color: #1d686e;
+  margin: 50px;
+}
+
+.bg-2 {
+  /*this is the container for the about me section and images*/
+  /*background-color: #111f5a;*/
+  color: #767b78;
+}
+
+#surfing, #surfing2, #baseball, #scottnMe, #biking2{
+  border-radius: 0px;
+  border-width: thick;
+  border-style: none;
+  border-color: #f9defd;
+  box-shadow: 3px 3px;
+  width: auto;
+  height: auto;
+  /*margin: 20px;*/
+}
+
+#bikeDiv img {
+  position:absolute;
+  left: 5%;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#bikeDiv img.top:hover {
+  opacity:0;
+}
+
+#baseballdiv img {
+  margin-top: 100px;
+position: absolute;
+  left:5%;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#baseballdiv img.top:hover {
+  opacity:0;
+}
+
+#surfingdiv img {
+  margin-top: 40px;
+  position:absolute;
+  left:10%;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#surfingdiv img.top:hover {
+  opacity:0;
+}
+
+
+/*styles the footer*/
+
+.bg-4 {
+  background-color: #4b4833;
+  color: #767b78;
+  padding: 30px;
+  margin-top: 300px;
+}
+
+#buttonDiv {
+  align-items: center;
+  align-content: center;
+  align-self: center;
+}
+
+#mountainBiking, #team, #theWaves{
+  text-decoration-color: #6b9099;
+  color: #22272d;
+  padding: 0px;
+  margin: 4px;
+}
+
+#BIO{
+  font: "Montserrat", sans-serif;
+  color: #6b9099;
+}
+
+#bioP{
+  font: "Montserrat", sans-serif;
+  color: #22272d;
+  text-align: left;
+}
+
+#myGoal{
+  font: "Montserrat", sans-serif;
+  color: #4b4833;
+}
+
+#collegesImInteresedIn{
+  font: "Montserrat", sans-serif;
+  color: #4b4833;
+}
