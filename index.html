@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+  <title>Welcome to Michael's page</title>
+  <!-- link to style sheet -->
+  <link href="template.css" rel="stylesheet" type="text/css"></link>
+
+  <!-- link to the google font that we want to use -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+  <!-- link to bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</head>
+
+<body id="index">
+
+  <marquee behavior="scroll" direction="up" scrollamount="3" align="center" scrolldelay="10">Michael Moschitto's Page</marquee>
+  <!-- <h1>Hello, World</h1> -->
+
+  <!-- nav bar to nav to the other pages... done in bootstrap so it looks pretty -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavBar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand" href="#">Michael's Page</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavBar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="extraCurriculars.html">Extra Curriculars</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- this is all the carousel stuff -->
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="https://placehold.it/1200x400?text=IMAGE" alt="Image">
+        <div class="carousel-caption">
+          <h3>About me</h3>
+          <p>Activities</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="https://placehold.it/1200x400?text=Another Image Maybe" alt="Image">
+        <div class="carousel-caption">
+          <h3>.........</h3>
+          <p>.......</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <!-- This is the images and college list in the middle container -->
+  <div class="container-fluid bg-1 text-center">
+
+    <!-- drop down button -->
+    <center>
+      <button id="dropDownButton" type="button" class="btn btn-info" data-toggle="collapse" data-target="#explanation">About this website</button>
+      <div id="explanation" class="collapse">
+        I created this website to showcase who I am as a student and what I have accomplished throughtout my academic career as well as give colleges another perspective as to who I am as a person outside of school as well. It's goal is to use my computer science
+        skills to show off who I am as a student, athlete, and person.
+      </div>
+    </center>
+
+    <!-- left well -->
+    <div class="col-sm-9">
+    </div>
+    <div class="col-sm-4" id="collegeDiv">
+      <div class="well" id="leftWell">
+        <h3 id="myGoal">My College Goal</h3>
+        <p>
+          My college goal is centered around the two ideas that are most important to me. First I want to further my passion for computer science and math and gain a world class education as I continue to explore my passions. The thing that I value second from
+          my school experience is school spirit. As I continue to work extremely hard I also want achieve my academic goals while maintaining the most school spirit possible. I love football games, pep rallies, school events, and want to be proud and
+          serve my school just as it serves me.
+        </p>
+      </div>
+    </div>
+
+    <!-- BIO SECTION -->
+    <div class="col-sm-4">
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+      <!-- <h3 id="BIO">BIO</h3> -->
+      <!-- <p id="bioP">My name is michael moschitto and I am a prospective computer science student. I have taken three years of languages and know java, swift, phython, javascript, and html/webdesign.</p> -->
+    </div>
+    <div class="col-sm-4" id="collegeDiv">
+      <div class="well">
+        <h3 id="collegesImInteresedIn">Colleges I'm interested in</h3>
+        <p>
+          Stanford, Berkley, Ucla, Vanderbilt, UW, UPenn, Michigan, Northwestern, Georgia Tech, UVA,
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- about me pictures and the captions that go along with them -->
+  <div class="container-fluid bg-2 text-center">
+    <div class="row">
+      <div class="col-sm-4" id="surfingdiv">
+        <p>When I'm not in the mountains I love to take pictures in the ocean. I'm not a huge surfer but I love being out in the waves and feeling the oceans power. I love it because it makes me feel small and powerless against the current, it reminds me
+          that I'm human.</p>
+        <img id="surfing" src="surfing.jpg" alt="surfing" class="bottom" class="img-responsive " style="width:80%" style="height:80%">
+        <img id="surfing2" src="surfing2.jpg" alt="surfing2" class="top" class="img-responsive" style="width:80%" style="height:80%">
+        <!-- <br> -->
+        <!-- <h4 id="theWaves">The Waves</h4> -->
+        <p>
+      </div>
+      <div class="col-sm-4" id="baseballdiv">
+        <!-- <h4 id="team">The Team</h4> -->
+        <img id="baseball2" src="baseball2.jpg " alt="baseball 2" class="bottom" class="image-responsive" style="width:90%" style="height:90%">
+        <img id="baseball" src="baseball.jpg " alt="baseball" class="top" class="image-responsive" style="width:90%" style="height:90%">
+        <p>Baseball has been very influencial in my highschool experience. I may not have been able to achieve my major league dreams but the sense of community, my teammates, and the work ethic and determination that I learned on the diamond will never
+          leave me. </p>
+          <!-- <br> -->
+      </div>
+      <div class="col-sm-4 " id="bikeDiv">
+        <p>One of my favorite things to do is to mountain bike with my friends. If I am every stressed or just need to get away I take my bike to the mountains. The adrenaline of ripping down a dusty trail has a calming effect on me, and I love spending
+          an hour without time to think. Its my version of meditation.</p>
+        <img id="biking2" src="biking2.jpg " alt="biking 2" class="bottom" class="image-responsive" style="width:80%" style="height:80%">
+        <img id="scottnMe" src="ScottnMe.jpg " alt="Scott and me " class="top" class="image-responsive" style="width:80%" style="height:80%">
+        <br>
+        <!-- <h4 id="mountainBiking">Mountain biking</h4> -->
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer class="container-fluid bg-4 text-center">
+    <p>Website by Michael Moschitto
+      <a href="https://github.com/michaelmoschitto/myWebsite"></p>
+  </footer>
+
+</body>
+
+</html>
