@@ -43,6 +43,7 @@ marquee {
   /* Set width to 100% */
   margin: auto;
   min-height: 200px;
+  max-height: 900px;
 }
 
 
@@ -54,8 +55,8 @@ marquee {
   }
 }
 
-#dropDownButton {
-  padding: 10px 25px;
+#dropDownButton, #wavebutton, #baseballButton, #mountainButton {
+  /*padding: 10px 25px;*/
   background-color: #6b9099;
   border-style: none;
   font: 15px "Montserrat", sans-serif;
@@ -70,9 +71,25 @@ marquee {
 }
 
 #dropDownButton:hover {
-  background-color: #4b4833;
+  background-color: #22272d;
   color: white;
 }
+
+#wavebutton:hover{
+  background-color:#22272d;
+  color: white;
+}
+
+#baseballButton:hover{
+  background-color:#22272d;
+  color: white;
+}
+
+#mountainButton:hover {
+  background-color: #22272d;
+  color: white;
+}
+
 
 #collegeDiv {
   color: #767b78;
@@ -110,6 +127,7 @@ marquee {
   box-shadow: 3px 3px;
   width: auto;
   height: auto;
+  max-height: 250px;
   /*margin: 20px;*/
 }
 
@@ -120,6 +138,9 @@ marquee {
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #bikeDiv img.top:hover {
@@ -127,7 +148,9 @@ marquee {
 }
 
 #baseballdiv img {
-  margin-top: 100px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
 position: absolute;
   left:5%;
   -webkit-transition: opacity 1s ease-in-out;
@@ -141,7 +164,9 @@ position: absolute;
 }
 
 #surfingdiv img {
-  margin-top: 40px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
   position:absolute;
   left:10%;
   -webkit-transition: opacity 1s ease-in-out;
