@@ -2,56 +2,26 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
- 		<title>Academics:</title>
+ 		<title>Academics</title>
  		<!-- link to style sheet -->
-   		<link href="template.css" rel = "stylesheet" type="text/css">
+		<link href="templateJ.css" rel="stylesheet" type="text/css"></link>
 
-   		<!-- link to bootstrap -->
-   		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-   		<link href="templateJ.css" rel="stylesheet" type="text/css">
-   		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- link to the google font that we want to use -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+		<!-- link to bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
  	</head>
-	<!--style>
-.container {
-  position: relative;
-  width: 50%;
-}
 
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.aOverlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
-}
-
-.container:hover .aOverlay {
-  opacity: 0.5;
-}
-
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-</style>
--->
  <body id=academics>
 
    		<marquee behavior="scroll" direction="up" scrollamount="1">Jeremy Knight's Page</marquee>
@@ -109,51 +79,61 @@
         <p>SAT: 40</p>
       </div>
     </div>
-    <div>
 
-      	<img id="college" src="College.jpeg" width="250" height="250" alt="college photo">
-					<!--<div class="aOverlay">
-	 					<div class="text">Hello World</div>
- 					</div>-->
-      	<img id="code" src="coding.jpeg"  width="250" height="250" alt="code photo">
-				<img id="baseball" src="baseball.jpeg"  width="250" height="250" alt="baseball photo">
-      </div>
+		<div>
+
+			<div>
+				<!--img id="college" onmouseover="showText(this)" onmouseout="unshowText(this)" src="College.jpeg" width="0" height="0" alt="college photo"></img>
+				-->
+			</div>
+			<p>
+				<div id="imgs">
+			<div class= "container1">
+				<img id="college" onmouseover="showText(this)" onmouseout="unshowText(this)" src="College.jpeg" width="250" height="250" alt="college photo"></img>
+					<div class= "center" id="text1">College</div>
+
+
+			<!--div class= "container2"-->
+      	<img id="code" onmouseover="showText(this)" onmouseout="unshowText(this)" src="coding.jpeg"  width="250" height="250" alt="code photo"></img>
+				<div class= "center" id="text2">Coding</div>
+			<!-- </div> -->
+
+				<!-- <div class= "container3"> -->
+				<img id="baseball" onmouseover="showText(this)" onmouseout="unshowText(this)" src="baseball.jpeg"  width="250" height="250" alt="baseball photo"></img>
+				<div class= "center" id="text3">Baseball</div>
+			<!-- </div> -->
+			</div>
+		</p>
+	</div>
+
+			</div>
   </div>
 </div>
+<script>
+	function showText(x) {
+		if(x.id=="college") {
+			document.getElementById('college').style.opacity= ".5";
+			document.getElementById('text1').style.opacity="1"
+		}
+		else if(x.id=="code") {
+			document.getElementById('code').style.opacity= ".5";
+			document.getElementById('text2').style.opacity="1";
+		}
+		else if(x.id=="baseball"){
+			document.getElementById('baseball').style.opacity= ".5";
+			document.getElementById('text3').style.opacity="1";
+		}
 
-  <!--
-   <p id= aAchievement>
-    	This is a brief essay on my academic achievement. This is a brief essay on my academic achievement.
-    	This is a brief essay on my academic achievement. This is a brief essay on my academic achievement.
-    	This is a brief essay on my academic achievement. This is a brief essay on my academic achievement.
-    	This is a brief essay on my academic achievement. This is a brief essay on my academic achievement.
-   </p>
-
-
-   <p id = GPA>
-   		GPA: 4.0
-   </p>
-
-   <p id = Scores>
-   		ACT: 13 <br />
-   		SAT: 40
-   </p>
-
-   <p id= academics>
-   	 	This is a brief essay on my academic interests. This is a brief essay on my academic interests.
-   	 	This is a brief essay on my academic interests. This is a brief essay on my academic interests.
-   	 	This is a brief essay on my academic interests. This is a brief essay on my academic interests.
-   </p>
-
-   <p id = plans>
-   		My college plans. My college plans. My college plans. My college plans. My college plans. My college plans.
-   		My college plans. My college plans. My college plans. My college plans. My college plans. My college plans.
-   		My college plans. My college plans. My college plans. My college plans. My college plans. My college plans.
-   </p>
-
-
-
-  <img src= "\https://jeremyknight.github.io/test_webpages/index2.html/unamed.jpg" alt="Jeremy Knight"-->
+	}
+	function unshowText(x){
+		document.getElementById('college').style.opacity= "1";
+		document.getElementById('code').style.opacity= "1";
+		document.getElementById('baseball').style.opacity= "1";
+		document.getElementById('text1').style.opacity="0";
+		document.getElementById('text2').style.opacity="0";
+		document.getElementById('text3').style.opacity="0";
+	}
+</script>
 
 
  <footer class="container-fluid text-center">
