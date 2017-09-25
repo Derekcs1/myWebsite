@@ -19,7 +19,7 @@ marquee {
 }
 
 .navbar-nav li a:hover {
-  color: #1abc9c !important;
+  color: #1abc9c; !important;
 }
 
 
@@ -27,14 +27,20 @@ marquee {
 
 footer {
   background-color: #f2f2f2;
-  padding: 25px;
+  padding: 15px;
+}
+.center {
+  opacity: 0;
+  position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 18px;
 }
 
-.carousel-inner img {
-  width: 100%;
-  /* Set width to 100% */
-  margin: auto;
-  min-height: 200px;
+.container1 {
+  position: relative;
+/*  margin-left:-500px;*/
 }
 
 @media (max-width: 600px) {
@@ -43,52 +49,42 @@ footer {
   }
 
 /*academic stuff*/
-#academics .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-}
+
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-#academics .row.content {height: 450px}
+ .row.content {height: 450px}
 
 /* Set gray background color and 100% height */
-#academics .sidenav {
+ .sidenav {
       padding-top: 20px;
       background-color: #f1f1f1;
       height: 100%;
 }
 
  /* Set black background color, white text and some padding */
-#academics footer {
-      background-color: #555;
-      color: white;
-      padding: 15px;
-}
 
  /* On small screens, set height to 'auto' for sidenav and grid */
-#academics @media screen and (max-width: 767px) {
-    #academics .sidenav {
+ @media screen and (max-width: 767px) {
+  .sidenav {
     	height: auto;
     	padding: 15px;
 }
-#academics  .row.content {height:auto;}
-
-.aOverlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
-}
 
 #college {
-	height: 10px;
-	width: 10px;
+  left: 250px;
 }
 
+#imgs img{display: inline-block;}
 
-}
+ .row.content {height:auto;}
+
+ #text1 {
+   margin-top: -125px;
+   margin-left: -250px;
+ }
+ #text2 {
+   margin-top: -125px;
+ }
+ #text3 {
+   margin-top: 125px;
+   margin-left: 250px;
+ }
