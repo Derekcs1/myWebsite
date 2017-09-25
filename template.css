@@ -127,7 +127,8 @@ marquee {
   box-shadow: 3px 3px;
   width: auto;
   height: auto;
-  max-height: 250px;
+  max-height: 270px;
+min-height: 270px;
   /*margin: 20px;*/
 }
 
