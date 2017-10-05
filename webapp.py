@@ -12,7 +12,7 @@ def render_page1():
 
 @app.route("/e")
 def render_page2():
-    return render_template('extraCurricular.html')
+    return render_template('extraCurriculars.html')
     
 if __name__=="__main__":
     app.run(debug=False, port=54321)
