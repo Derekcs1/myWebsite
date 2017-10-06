@@ -5,19 +5,18 @@
  
      <!--page content-->
 {% block content %}
- <link href="templateD.css" rel="stylesheet" type="text/css"></link>
     
 
 <div class="container-fluid bg-1 text-center">
   <h3 class="margin">Introduction</h3>
-  <img src="bear.jpg" class="img-responsive img-circle margin" style="display:inline" alt="pic" width="350" height="350">
+  <img src="{{url_for('static', filename='bear.jpg')}}" alt="Baseball Team">class="img-responsive img-circle margin" style="display:inline" width="350" height="350">
   <h3>This webpage is an overview of my extra curricular activities including sports, community service, and summer programs. </h3>
 </div>
 
 <div class="container-fluid bg-2 text-center">
   <h3 class="margin">Sports</h3>
-  <img src="dive.png" id="fimg" class="img-responsive img-rounded margin" style="display:inline" alt="flipp" width="274" height="300">
-   <img src="flip.png" id="dimg" class="img-responsive img-rounded margin" style="display:inline" alt="air" width="300" height="300">
+    <img src="{{url_for('static', filename='dive.jpg')}}" alt="flipp"> class="img-responsive img-rounded margin" style="display:inline" width="274" height="300">
+   <img src="{{url_for('static', filename='dive.jpg')}}" alt="dive"> class="img-responsive img-rounded margin" style="display:inline" width="300" height="300">
   <p>Throughout high school, I have participated in three different sports. Freshman year I participated in waterpolo, swim team, and dive. Dive really peaked my interest and I have been focusing on it exclusively ever since. I have been on the varisity team here at the highschool ever since sophmore year. I even won the channel league championships back to back, 10th and 11th grade, and as of senior year, I have been elected captain of the team.</p>
 </div>
 
